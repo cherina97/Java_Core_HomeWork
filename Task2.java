@@ -1,17 +1,18 @@
 public class Task2 {
     public static void main(String[] args) {
-        double result = Square(1.75);
-        System.out.println("Square = " + result);
-        double result2 = Lenght(3.36);
-        System.out.println("Lenght = " + result2);
+        Circle circle = new Circle();
+        circle.Square(2.36);
+        circle.Lenght(5.3);
     }
+}
+class Circle {
 
-    static double Square ( double r){
+    static void Square ( double r){
         double result = 3.14 * r * r;
-        return result;
+        System.out.println(result);
     }
-    static double Lenght ( double d){
+    static void Lenght ( double d){
         double result2 = 2 * 3.14 * d;
-        return result2;
+        System.out.println(result2);
     }
 }
