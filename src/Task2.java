@@ -8,7 +8,7 @@ public class Task2 {
         int side;
 
         for (int i = 0; i < number; i++){
-            side = (int)Math.random()*10;
+            side = (int)(Math.random()*10)/5;
 
             if (side == 0){
                 System.out.println("Орел");
