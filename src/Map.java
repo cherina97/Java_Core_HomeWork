@@ -26,7 +26,7 @@ public class Map <K, V> extends MyEntry<K, V> {
         while (iterator.hasNext()){
             Entry<K, V> next = iterator.next();
             if(next.getValue().equals(v)){
-                map.remove(next.getKey());
+                iterator.remove();
             }
         }
     }
