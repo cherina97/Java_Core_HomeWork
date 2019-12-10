@@ -19,10 +19,19 @@ public class Main {
         this.isWild = isWild;
     }
 
+    @Override
+    public String toString() {
+        return "Main{" +
+                "speed=" + speed +
+                ", typeOgAnimal='" + typeOgAnimal + '\'' +
+                ", isWild=" + isWild +
+                '}';
+    }
+
     public static void main(String[] args) {
         Animal animal = Main::new;
         Main main = animal.createNewAnimal(20, "Cat", false);
-        System.out.println();
+        System.out.println(main.toString());
     }
 }
 
